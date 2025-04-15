@@ -8,47 +8,47 @@ import "./globals.css";
 const poppins = localFont({
   src: [
     {
-      path: "./font/poppins/poppins-black.ttf",
+      path: "font/poppins/poppins-black.ttf",
       weight: '900',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-ExtraBold.ttf",
+      path: "font/poppins/poppins-ExtraBold.ttf",
       weight: '800',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-bold.ttf",
+      path: "font/poppins/poppins-bold.ttf",
       weight: '700',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-Semibold.ttf",
+      path: "font/poppins/poppins-Semibold.ttf",
       weight: '600',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-Medium.ttf",
+      path: "font/poppins/poppins-Medium.ttf",
       weight: '500',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-Regular.ttf",
+      path: "font/poppins/poppins-Regular.ttf",
       weight: '400',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-Thin.ttf",
+      path: "font/poppins/poppins-Thin.ttf",
       weight: '300',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-Light.ttf",
+      path: "font/poppins/poppins-Light.ttf",
       weight: '200',
       style: 'normal'
     },
     {
-      path: "./font/poppins/poppins-ExtraLight.ttf",
+      path: "font/poppins/poppins-ExtraLight.ttf",
       weight: '100',
       style: 'normal'
     },
@@ -59,47 +59,47 @@ const poppins = localFont({
 const Montserrat = localFont({
   src: [
     {
-      path: "./font/Montserrat/Montserrat-black.ttf",
+      path: "font/Montserrat/Montserrat-black.ttf",
       weight: '900',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-ExtraBold.ttf",
+      path: "font/Montserrat/Montserrat-ExtraBold.ttf",
       weight: '800',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-bold.ttf",
+      path: "font/Montserrat/Montserrat-bold.ttf",
       weight: '700',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-Semibold.ttf",
+      path: "font/Montserrat/Montserrat-Semibold.ttf",
       weight: '600',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-Medium.ttf",
+      path: "font/Montserrat/Montserrat-Medium.ttf",
       weight: '500',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-Regular.ttf",
+      path: "font/Montserrat/Montserrat-Regular.ttf",
       weight: '400',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-Thin.ttf",
+      path: "font/Montserrat/Montserrat-Thin.ttf",
       weight: '300',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-Light.ttf",
+      path: "font/Montserrat/Montserrat-Light.ttf",
       weight: '200',
       style: 'normal'
     },
     {
-      path: "./font/Montserrat/Montserrat-ExtraLight.ttf",
+      path: "font/Montserrat/Montserrat-ExtraLight.ttf",
       weight: '100',
       style: 'normal'
     },
