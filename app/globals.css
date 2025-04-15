@@ -85,7 +85,7 @@
 }
 
 .header{
-    background-image: url("../assets/images/header.jpg");
+    background-image: url("/images/header.jpg");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size:contain
