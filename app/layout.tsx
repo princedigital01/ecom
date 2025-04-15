@@ -8,7 +8,7 @@ import "./globals.css";
 const poppins = localFont({
   src: [
     {
-      path: "./font/poppins/Poppins-Black.ttf",
+      path: "./font/Poppins/Poppins-Black.ttf",
       weight: '900',
       style: 'normal'
     },
