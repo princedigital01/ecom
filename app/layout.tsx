@@ -13,99 +13,100 @@ const poppins = localFont({
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-ExtraBold.ttf",
+      path: "./font/Poppins/Poppins-ExtraBold.ttf",
       weight: '800',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-bold.ttf",
+      path: "./font/Poppins/Poppins-Bold.ttf",
       weight: '700',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-Semibold.ttf",
+      path: "./font/Poppins/Poppins-SemiBold.ttf",
       weight: '600',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-Medium.ttf",
+      path: "./font/Poppins/Poppins-Medium.ttf",
       weight: '500',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-Regular.ttf",
+      path: "./font/Poppins/Poppins-Regular.ttf",
       weight: '400',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-Thin.ttf",
+      path: "./font/Poppins/Poppins-Thin.ttf",
       weight: '300',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-Light.ttf",
+      path: "./font/Poppins/Poppins-Light.ttf",
       weight: '200',
       style: 'normal'
     },
     {
-      path: "font/poppins/poppins-ExtraLight.ttf",
+      path: "./font/Poppins/Poppins-ExtraLight.ttf",
       weight: '100',
       style: 'normal'
     },
   ],
-  variable:'--font-poppins'
-})
+  variable: '--font-poppins'
+});
 
 const Montserrat = localFont({
   src: [
     {
-      path: "font/Montserrat/Montserrat-black.ttf",
+      path: "./font/Montserrat/Montserrat-Black.ttf",
       weight: '900',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-ExtraBold.ttf",
+      path: "./font/Montserrat/Montserrat-ExtraBold.ttf",
       weight: '800',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-bold.ttf",
+      path: "./font/Montserrat/Montserrat-Bold.ttf",
       weight: '700',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-Semibold.ttf",
+      path: "./font/Montserrat/Montserrat-SemiBold.ttf",
       weight: '600',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-Medium.ttf",
+      path: "./font/Montserrat/Montserrat-Medium.ttf",
       weight: '500',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-Regular.ttf",
+      path: "./font/Montserrat/Montserrat-Regular.ttf",
       weight: '400',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-Thin.ttf",
+      path: "./font/Montserrat/Montserrat-Thin.ttf",
       weight: '300',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-Light.ttf",
+      path: "./font/Montserrat/Montserrat-Light.ttf",
       weight: '200',
       style: 'normal'
     },
     {
-      path: "font/Montserrat/Montserrat-ExtraLight.ttf",
+      path: "./font/Montserrat/Montserrat-ExtraLight.ttf",
       weight: '100',
       style: 'normal'
     },
   ],
-  variable:'--font-Montserrat'
-})
+  variable: '--font-Montserrat'
+});
+
 
 
 export const metadata: Metadata = {
