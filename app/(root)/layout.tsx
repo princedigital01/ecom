@@ -1,7 +1,6 @@
 "use client"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import ThemeBtn from "@/components/ThemeBtn"
 import { HeroUIProvider } from "@heroui/react";
 
 export default function layout({children}: Readonly<{children:React.ReactNode}>) {
