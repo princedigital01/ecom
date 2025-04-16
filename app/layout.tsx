@@ -116,16 +116,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  session, // ✅ Accept session prop
+   // ✅ Accept session prop
 }: Readonly<{
   children: React.ReactNode;
-  session?: any; // Add session type
+  // Add session type
 }>) {
   return (
     <html lang="en">
       <body className={`${poppins.variable || Montserrat.variable} font-poppins antialiased bg-bg`}  data-bs-theme="dark">
       
-        <AuthProvider session={session}> {/* ✅ Pass session */}
+        <AuthProvider session={""}> {/* ✅ Pass session */}
           {children}
         </AuthProvider>
       </body>
