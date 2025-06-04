@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 import React, { useEffect, useState } from 'react'
 import { product } from '@/constants'
@@ -109,4 +110,16 @@ const Carousel = () => {
   )
 }
 
+=======
+import React from 'react'
+
+const Carousel = () => {
+  return (
+    <div>
+        
+    </div>
+  )
+}
+
+>>>>>>> 72ab78614fbbc9379365085ebf0c9f004550bbc9
 export default Carousel

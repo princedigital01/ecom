@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Filtering, Grid, ViewList } from "@/assets/icons";
 import Products from "@/components/Products";
 
@@ -29,4 +30,14 @@ export default function Shop() {
       </div>
     );
   }
+=======
+export default function Shop() {
+
+    return (
+      <div className="text-c-red">
+        shop
+      </div>
+    );
+  }
+>>>>>>> 72ab78614fbbc9379365085ebf0c9f004550bbc9
   

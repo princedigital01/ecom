@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client'
 import { Right, Star, Verified } from "@/assets/icons";
 import { testimonials } from "@/constants";
@@ -55,4 +56,14 @@ const Testimonial = () => {
   )
 }
 
+=======
+import React from 'react'
+
+const Testimonial = () => {
+  return (
+    <div>Testimonial</div>
+  )
+}
+
+>>>>>>> 72ab78614fbbc9379365085ebf0c9f004550bbc9
 export default Testimonial

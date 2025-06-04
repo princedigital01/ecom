@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Bin from "./Bin"
 import Grid from "./Grid"
 import Star from "./Star"
@@ -28,3 +29,14 @@ export {
     Bin, 
     
 }
+=======
+import Heart from "./Heart"
+import Share from "./Share"
+import Search from "./Search"
+import Account from "./Account"
+import ShoppingCart from "./ShoppingCart"
+
+
+
+export {Account,Search,ShoppingCart,Heart,Share}
+>>>>>>> 72ab78614fbbc9379365085ebf0c9f004550bbc9
