@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -26,14 +25,4 @@ const Hero2 = ({ children,className, ...props }) => {
   )
 }
 
-=======
-import React from 'react'
-
-const Hero2 = ({children,...props}) => {
-  return (
-    <div {...props}>{children}</div>
-  )
-}
-
->>>>>>> 72ab78614fbbc9379365085ebf0c9f004550bbc9
 export default Hero2
