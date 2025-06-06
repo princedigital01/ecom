@@ -34,7 +34,7 @@ export default function Shop() {
               value={limit === undefined || limit === null ? '' : limit}
               onChange={(e) => {
                 const val = e.target.value;
-                setLimit(val === '' || val==0 ? 1 : Number(val));
+                setLimit(val === '' || val=="0" ? 1 : Number(val));
               }}
             />
           </div>
