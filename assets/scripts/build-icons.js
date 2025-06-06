@@ -28,9 +28,10 @@ function generateIndexFile(iconNames) {
 function buildIcons() {
   console.log("⚙️  Converting SVGs to React components...");
 
-  execSync(`npx @svgr/cli ${RAW_DIR} --out-dir ${OUT_DIR} --icon --ext jsx`, {
-    stdio: "inherit",
-  });
+  execSync(
+  `npx @svgr/cli ${RAW_DIR} --out-dir ${OUT_DIR} --icon --ext jsx --template assets/scripts/svgr-template.js`,
+  { stdio: "inherit" }
+);
 
   const icons = fs
     .readdirSync(RAW_DIR)

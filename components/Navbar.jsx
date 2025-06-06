@@ -84,7 +84,7 @@ const Navbar = ({className}) => {
                 </Link>
                 
                 <div className={`${openNav ? "flex":"hidden" } z-40`}>
-                    <div onClick={toggleNav} className="z-50 absolute flex gap-2 flex-col left-0 top-0 items-center text-center align-middle content-center w-screen h-screen pt-10">
+                    <div onClick={toggleNav} className="z-50 absolute flex gap-2 flex-col left-0 top-0 items-center text-center align-middle content-center w-screen md:w-[50vw] h-screen pt-10">
                         {nav.map((item) => (
 
                             <Link key={item.id} href={item.link} className={`${pathname === item.link ? "text-c-primary" : "  text-c-link"}  transition-all duration-300 hover:text-sm hover:text-c-text font-semibold`}>
@@ -94,9 +94,8 @@ const Navbar = ({className}) => {
                         
                         
                     </div>
-                    <button onClick={toggleNav}  className=" z-50 rounded-full bg-c-active absolute w-5 h-5 overflow-hidden left-[87%] top-[4%] p-0">
-                            <div className="w-5 h-0.5 bg-c-primary rounded-lg group-hover:bg-c-link absolute  rotate-45 left-0 "></div>
-                            <div className="w-5 h-0.5 bg-c-primary rounded-lg group-hover:bg-c-link absolute -rotate-45 lfet-0 "></div>
+                    <button onClick={toggleNav}  className=" z-50 rounded-full bg-c-active absolute left-[87%] md:left-[45%] top-[4%] p-0">
+                            <icons.Cancel/>
                     </button>
                     <MenuBg/>
                 </div>

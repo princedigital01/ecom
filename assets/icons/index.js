@@ -12,6 +12,8 @@ import Filtering from "./Filtering"
 import ShoppingCart from "./ShoppingCart"
 
 
+export * from "@/assets/src";
+
 
 export {
     ShoppingCart,
@@ -28,3 +30,4 @@ export {
     Bin, 
     
 }
+
