@@ -30,17 +30,22 @@ const Testimonial = () => {
       <div className='text-2xl text-c-text font-bold'>OUR HAPPY CUSTOMERS</div>
       <div className="h-[40vh]">
         <div className="flex justify-between w-[100vw] h-[40vh] absolute z-10">
-            <div className="w-[10vw] h-full backdrop-blur-[1px]"></div>
-            <div className="w-[10vw] h-full backdrop-blur-[1px]"></div>
+          <div className="w-[10vw] h-full backdrop-blur-[1px]"></div>
+          <div className="w-[10vw] h-full backdrop-blur-[1px]"></div>
         </div>
         <div className="relative w-[70vw] md:w-[46vw] lg:w-[33vw] flex flex-row gap-2 mt-12 transition-transform ease-out duration-500" style={{ transform: `translateX(-${curr * 99}%)` }}>
-          
+
           {slides.map((item) => (
             <div key={item.id} className="flex-none border p-4 rounded-md flex flex-col gap-2 w-[70vw] md:w-[46vw] lg:w-[33vw]">
               <div className="flex">
-                <Star/><Star/><Star/><Star/><Star/>
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={18} color="#FFD700" />
+                ))}
               </div>
-              <div className="text-c-text font-bold text-tiny font-serif flex gap-1">{item.name} <Verified size="14"/></div>
+              <div className="text-c-text font-bold text-tiny font-serif flex gap-1">
+                {item.name}
+                <Verified className="text-blue-500" size={14} />
+              </div>
               <div className="text-c-title text-tiny font-thin ">{item.description}</div>
 
             </div>
@@ -48,8 +53,8 @@ const Testimonial = () => {
         </div>
       </div>
       <div className=" absolute left-[80vw] top-0 flex gap-2">
-        <button onClick={prev} className='text-c-primary rounded-full text-lg font-bold p-1 w-10 h-10'><Right color={"black"} className={"rotate-180"}/></button>
-        <button onClick={next} className='text-c-primary rounded-full text-lg font-bold p-1 w-10 h-10'><Right color={"black"}/></button>
+        <button onClick={prev} className='text-c-primary rounded-full text-lg font-bold p-1 w-10 h-10'><Right color={"black"} className={"rotate-180"} /></button>
+        <button onClick={next} className='text-c-primary rounded-full text-lg font-bold p-1 w-10 h-10'><Right color={"black"} /></button>
       </div>
     </div>
   )

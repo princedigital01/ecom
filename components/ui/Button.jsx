@@ -9,13 +9,13 @@ const Button = ({className,children,href, stroke,white, none, ...props}) => {
 
     if(href != null){
         return(
-            <Link href={href} className={none ? className : classname+" flex flex-col justify-center text-center align-middle content-center"}>{children}</Link>
+            <Link href={href} className={none ? className : classname+" flex flex-col justify-center text-center align-middle content-center"} {...props}>{children}</Link>
         )
 
     }
     else{
         return(
-            <button className={none ? className : classname}>{children}</button>
+            <button className={none ? className : classname} {...props}>{children}</button>
         )
     }
 

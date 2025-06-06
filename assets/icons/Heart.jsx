@@ -1,12 +1,32 @@
-import React from 'react'
+import React from 'react';
 
-const heart = ({size,className, color, fill, strokeWidth,...props}) => {
-    return (
-        <svg className={className} width={size|| "28"} height={size|| "28"} viewBox="0 0 28 28" fill={fill || `none`} xmlns="http://www.w3.org/2000/svg">
-            <path d="M8.16668 3.5C4.94551 3.5 2.33334 6.08533 2.33334 9.275C2.33334 11.8498 3.35418 17.9608 13.4027 24.1383C13.5827 24.2479 13.7893 24.3058 14 24.3058C14.2107 24.3058 14.4173 24.2479 14.5973 24.1383C24.6458 17.9608 25.6667 11.8498 25.6667 9.275C25.6667 6.08533 23.0545 3.5 19.8333 3.5C16.6122 3.5 14 7 14 7C14 7 11.3878 3.5 8.16668 3.5Z" stroke={color || `black`} strokeWidth={strokeWidth || "2"} strokeLinecap="round" strokeLinejoin="round" {...props} />
-        </svg>
+const Heart = ({
+  size = 28,
+  className = '',
+  color = 'currentColor',
+  fill = 'none',
+  strokeWidth = 2,
+  ...props
+}) => {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 28 28"
+      fill={fill}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M8.16668 3.5C4.94551 3.5 2.33334 6.08533 2.33334 9.275C2.33334 11.8498 3.35418 17.9608 13.4027 24.1383C13.5827 24.2479 13.7893 24.3058 14 24.3058C14.2107 24.3058 14.4173 24.2479 14.5973 24.1383C24.6458 17.9608 25.6667 11.8498 25.6667 9.275C25.6667 6.08533 23.0545 3.5 19.8333 3.5C16.6122 3.5 14 7 14 7C14 7 11.3878 3.5 8.16668 3.5Z"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 
-    )
-}
-
-export default heart
+export default Heart;

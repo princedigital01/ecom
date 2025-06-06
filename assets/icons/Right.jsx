@@ -1,12 +1,32 @@
-import React from 'react'
+import React from 'react';
 
-const Right = ({ size, className, color, fill, strokeWidth, ...props }) => {
-    return (
-        <svg className={className} width={size || "22"} height={size || "22"} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill={fill || `none`}>
-            <path d="M21 12H3M21 12L15 6M21 12L15 18" stroke={color || `white`} strokeWidth={`${strokeWidth || "2"}`} strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    )
-}
+const Right = ({
+  size = 22,
+  className = '',
+  color = 'currentColor',
+  fill = 'none',
+  strokeWidth = 2,
+  ...props
+}) => {
+  return (
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill={fill}
+      {...props}
+    >
+      <path
+        d="M21 12H3M21 12L15 6M21 12L15 18"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 
-export default Right
-
+export default Right;
