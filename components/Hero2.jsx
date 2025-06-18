@@ -9,6 +9,13 @@ const Hero2 = ({className, ...props }) => {
   return (
     <div className={`${className} flex relative overflow-hidden h-[50vh] justify-center items-center`} {...props}>
       <div className=' flex flex-col items-center text-center justify-center content-center align-middle'>
+        <Image
+          width={200}
+          height={200}
+          alt='logo'
+          src={"/images/logo.svg"}
+          className='w-14 h-14'
+        />
         <div className='text-5xl font-semibold text-c-text'>{pathname.slice(1)}</div>
         <div>
           <Link href={"/home"} className='font-semibold'>Home {'>'}</Link>

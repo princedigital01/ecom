@@ -84,10 +84,10 @@ const Navbar = ({className}) => {
                 </Link>
                 
                 <div className={`${openNav ? "flex":"hidden" } z-40`}>
-                    <div onClick={toggleNav} className="z-50 absolute flex gap-2 flex-col left-0 top-0 items-center text-center align-middle content-center w-screen md:w-[50vw] h-screen pt-10">
+                    <div onClick={toggleNav} className="z-50 absolute flex justify-around flex-col left-0 top-0 items-center text-center align-middle content-center w-screen md:w-[50vw] h-[50vh] pt-10">
                         {nav.map((item) => (
 
-                            <Link key={item.id} href={item.link} className={`${pathname === item.link ? "text-c-primary" : "  text-c-link"}  transition-all duration-300 hover:text-sm hover:text-c-text font-semibold`}>
+                            <Link key={item.id} href={item.link} className={`${pathname === item.link ? "text-c-primary" : "  text-c-link"}  transition-all duration-300 hover:text-sm hover:text-c-text font-semibold w-1/2`}>
                                 {item.text}
                             </Link>
                         ))}
