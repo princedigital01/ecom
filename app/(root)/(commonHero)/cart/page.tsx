@@ -1,9 +1,10 @@
 "use client"
-import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
 import Button from '@/components/ui/Button';
 import { useInView } from '@/hooks/useInView';
 import { Bin } from '@/assets/icons';
+import Image from 'next/image';
+
 
 const Cart = () => {
   const { cartItems, updateQuantity, removeItem, clearCart, cartTotal } = useCart();
@@ -42,7 +43,7 @@ const Cart = () => {
                       ${isInView && `is-in-view animation-delay-${index * 50}`}`
                     }
                   >
-                    <img
+                    <Image
                       src={item.img}
                       alt={item.name}
                       className="w-24 h-24 object-cover rounded-md mr-4"
