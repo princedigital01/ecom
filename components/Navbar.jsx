@@ -6,6 +6,9 @@ import { name, nav } from "@/constants";
 import { usePathname } from "next/navigation";
 import MenuBg from "@/components/design/MenuBg"
 import * as icons from "@/assets/icons";
+import { useCart } from "@/context/CartContext";
+
+
 
 function search() {
 
@@ -19,14 +22,13 @@ function account() {
 
 }
 
-function shoppingCart() {
-
-}
 
 
 const Navbar = ({className}) => {
     const size = 40;
     const pathname = usePathname();
+    const { cartItems } = useCart();
+    const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
     const [openNav, setOpenNav] = useState(false);
 
     function toggleNav(){
@@ -64,11 +66,14 @@ const Navbar = ({className}) => {
                         <icons.Heart className="icon" size={size} />
                     </button>
 
-                    <button onClick={shoppingCart}>
+                    <button className="relative">
+                        <Link href={"/cart"}>
+                        <span className="absolute -top-3 -left-3 bg-primary rounded-full w-6 h-6 text-sm text-center">{totalItems}</span>
                         <icons.ShoppingCart className="icon" size={size} />
+                        </Link>
                     </button>
 
-                    <button onClick={account}>
+                    <button >
                         <icons.Account className="icon" size={size} />
                     </button>
 
@@ -124,7 +129,8 @@ const Navbar = ({className}) => {
                         <icons.Heart className="icon2" />
                     </button>
 
-                    <button onClick={shoppingCart} className="w-8 h-8">
+                    <button className="w-8 h-8">
+                        <span>{totalItems}</span>
                         <icons.ShoppingCart className="icon2 text-c-green" />
                     </button>
                 </div>

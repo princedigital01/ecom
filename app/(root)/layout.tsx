@@ -8,6 +8,7 @@ export default function layout({children}: Readonly<{children:React.ReactNode}>)
 
     return (
       <div>
+        
         <HeroUIProvider>
         <Navbar className={""}/>
         <div className="pb-12 lg:pb-24"></div>

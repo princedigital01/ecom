@@ -1,6 +1,13 @@
 import React from 'react';
 
-const Bin = ({ size = 22, className = '', color, fill, strokeWidth, ...props }) => {
+const Bin = ({
+  size = 28,
+  className = '',
+  color = 'currentColor',
+  fill = 'none',
+  strokeWidth = 2,
+  ...props
+}) => {
   return (
     <svg
       className={className}

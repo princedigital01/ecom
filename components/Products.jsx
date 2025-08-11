@@ -3,14 +3,16 @@ import { product } from '@/constants'
 import Button from './ui/Button'
 import Pcard from './ui/Pcard'
 import { useEffect, useState } from 'react'
+import { useCart } from '@/context/CartContext'
 
 
 
 const Products = ({ limit, extend }) => {
 
 
-    const [list, setList] = useState(product)
+    const {addItem} = useCart();
     const [num, setNum] = useState(1);
+    const [list, setList] = useState(product)
 
 
     const getBtn = () => {
@@ -53,7 +55,9 @@ const Products = ({ limit, extend }) => {
                 <h1 id='productTitle' className={`font-bold text-c-text h2 lg:text-3xl ${extend ? 'text-left font-serif' : ""}`}>Our Products</h1>
                 <div className='pt-3 lg:pt-10 flex flex-wrap lg:gap-4 gap-2 justify-center'>
                     {list.map((item) => (
-                        <Pcard className={" self-center shadow-lg"} effect key={item.id} {...item} />
+                        <Pcard className={" self-center shadow-lg"}  effect key={item.id} {...item} >
+                            <Button className={"w-[202px] h-[48px] font-bold text-sm"} white onClick={()=>addItem(item)}>add to cart</Button>
+                        </Pcard>
                     ))}
 
                 </div>

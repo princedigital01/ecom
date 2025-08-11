@@ -4,7 +4,7 @@ const path = require("path");
 const { execSync } = require("child_process");
 
 const RAW_DIR = path.resolve(__dirname, "../icons-raw");
-const OUT_DIR = path.resolve(__dirname, "../src/icons");
+const OUT_DIR = path.resolve(__dirname, "../src/icon");
 const INDEX_FILE = path.resolve(__dirname, "../src/index.js");
 
 function toPascalCase(name) {

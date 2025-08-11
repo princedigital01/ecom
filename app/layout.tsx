@@ -126,6 +126,7 @@ export default function RootLayout({
       <body className={`${poppins.variable || Montserrat.variable} font-poppins antialiased bg-bg`}  data-bs-theme="dark">
       
         <AuthProvider session={""}> {/* ✅ Pass session */}
+        
           {children}
         </AuthProvider>
       </body>

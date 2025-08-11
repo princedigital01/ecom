@@ -23,7 +23,9 @@ function starGen({star}){
     }
 }
 
-const Pcard = ({id,className, name,star, price, img,discount, tag, oldprice, effect}) => {
+const Pcard = ({children, id,className, name,star, price, img,discount, tag, oldprice, effect}) => {
+
+
   return (
     <div className={`${className} h-[446px] w-[285px] relative inline-flex flex-col text-c-text group overflow-hidden bg-gray-100 group transition-all duration-300 mt-10 hover:mt-1`}>
         <div className="w-full h-[301px] flex justify-center">
@@ -62,7 +64,7 @@ const Pcard = ({id,className, name,star, price, img,discount, tag, oldprice, eff
             )}
         </div>
         <div className="absolute left-0 top-0 bg-c-black h-[446px] w-[285px] content-center hidden flex-col justify-center  text-center  items-center gap-6  group-hover:flex ">
-            <Button className={"w-[202px] h-[48px] font-bold text-sm"} white >add to cart</Button>
+            {children}
             <div className="flex justify-center gap-6">
                 <Button className={" text-c-bg flex gap-1"} none >
                    <Icons.Share  size={20} color={"white"} strokeWidth={1}  fill={"white"}/> share
